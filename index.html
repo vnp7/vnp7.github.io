@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 <style>
 .responsive {
   width: 100%;
   height: auto;
 }
+
+/* Styles for desktop */
+    @media only screen and (min-width: 768px) 
+    {
+      .landing page mobile 
+      {
+        display: none; /* Hide mobile image on desktop */
+      }
+
+      .landing page 
+      {
+        display: block; /* Show desktop image on desktop */
+      }
+    }
+
+    /* Styles for mobile */
+    @media only screen and (max-width: 767px) 
+    {
+      .landing page
+      {
+        display: none; /* Hide desktop image on mobile */
+      }
+
+      .landing page mobile 
+      {
+        display: block; /* Show mobile image on mobile */
+      }
+    }
+  
 </style>
   
 <head>
+  
 <meta name="viewport" content="width=device-width">
 <title>Patel Holdings LLC</title>
 <link rel="icon" type="image/x-icon" href="favicon.JPG">
+  
 </head>
   
 <body>
 
-<picture>
-  <source media="(max-width: 899px)" srcset="landing page mobile.png" />
-  <source media="(min-width: 900px)" srcset="landing page.png" />
-  <img src="landing page.png" alt="Maintenance" align=center class="responsive" width="1550" height="710">  
-</picture>
+<!-- Desktop Image -->
+<img src="landing page.jpg" alt="Desktop Image" class="responsive desktop-image">
+
+<!-- Mobile Image -->
+<img src="landing page mobile.jpg" alt="Mobile Image" class="responsive mobile-image">
 
 </body>
   
