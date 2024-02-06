@@ -1,123 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<style>
-.responsive {
-  width: 100%;
-  height: auto;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      margin: 0; /* Add this line to remove default margin */
-      padding: 0; /* Add this line to remove default padding */
-      font-family: Arial, sans-serif;
-      background-color: #ebe7e5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      flex-direction: column; /* Stack items vertically */
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ebe7e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-    .container {
-      background-color: #ebe7e5;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      text-align: center;
-    }
+        .image-container {
+            background-color: #ebe7e5;
+            text-align: center;
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+        }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
 
-    button {
-      background-color: #18284e;
-      color: #ebe7e5;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+        .container {
+            background-color: #ebe7e5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
 
-/* Styles for desktop */
-    @media only screen and (min-width: 768px) 
-    {
-      .mobile-image 
-      {
-        display: none; /* Hide mobile image on desktop */
-      }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
 
-      .desktop-image 
-      {
-        display: block; /* Show desktop image on desktop */
-      }
-    }
+        button {
+            background-color: #18284e;
+            color: #ebe7e5;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    /* Styles for mobile */
-    @media only screen and (max-width: 767px) 
-    {
-      .desktop-image
-      {
-        display: none; /* Hide desktop image on mobile */
-      }
+        /* Styles for desktop */
+        @media only screen and (min-width: 768px) {
+            .mobile-image {
+                display: none;
+            }
 
-      .mobile-image 
-      {
-        display: block; /* Show mobile image on mobile */
-      }
-    }
-  
-</style>
-  
-<title>Patel Holdings LLC</title>
-<meta name="description" content="A private, multigenerational investment firm diversifying wealth across family funds, businesses, and global ventures.">
-<link rel="icon" type="image/x-icon" href="favicon.JPG">
-  
+            .desktop-image {
+                display: block;
+            }
+        }
+
+        /* Styles for mobile */
+        @media only screen and (max-width: 767px) {
+            .desktop-image {
+                display: none;
+            }
+
+            .mobile-image {
+                display: block;
+            }
+        }
+    </style>
+
+    <title>Patel Holdings LLC</title>
+    <meta name="description" content="A private, multigenerational investment firm diversifying wealth across family funds, businesses, and global ventures.">
+    <link rel="icon" type="image/x-icon" href="favicon.JPG">
+
 </head>
-  
+
 <body>
 
-<div class="image-container">
+    <div class="image-container">
+        <!-- Desktop Image -->
+        <img src="landing-page.png" alt="Desktop Image" class="responsive desktop-image">
 
-  <!-- Desktop Image -->
-  <img src="landing-page.png" alt="Desktop Image" class="responsive desktop-image">
-  
-  <!-- Mobile Image -->
-  <img src="landing-page-mobile.png" alt="Mobile Image" class="responsive mobile-image">
-</div>
+        <!-- Mobile Image -->
+        <img src="landing-page-mobile.png" alt="Mobile Image" class="responsive mobile-image">
+    </div>
 
-<div class="container">
-  <h2>Sign In</h2>
-  
-    <form action="#" method="post">
-      
-      <label 
-        for="username">Username:
-      </label>
-        <input type="text" id="username" name="username" required>
+    <div class="container">
+        <h2>Sign In</h2>
 
-    <label 
-      for="password">Password:
-    </label>
-      <input type="password" id="password" name="password" required>
+        <form action="#" method="post">
 
-    <button 
-      type="submit">Sign In
-    </button>
-      
-  </form>
-  
-</div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+
+        </form>
+
+    </div>
 
 </body>
-  
-</html>
 
+</html>
