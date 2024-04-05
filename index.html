@@ -24,7 +24,6 @@
         .image-container {
             background-color: #ebe7e5;
             text-align: center;
-            padding-top: 425px; /* Add padding to the top of the container */
         }
 
         .responsive {
@@ -61,6 +60,9 @@
 
         /* Styles for desktop */
         @media only screen and (min-width: 768px) {
+            .image-container {
+        padding-top: 450px; /* Adjust padding for desktop */
+            }
             .mobile-image {
                 display: none;
             }
@@ -72,6 +74,9 @@
 
         /* Styles for mobile */
         @media only screen and (max-width: 767px) {
+            .image-container {
+        padding-top: 150px; /* Adjust padding for mobile */
+            }
             .desktop-image {
                 display: none;
             }
@@ -79,10 +84,7 @@
             .mobile-image {
                 display: block;
             }
-            
-            .image-container {
-        padding-top: 250px; /* Adjust padding for smaller screens */
-            }
+
         }
 
         /* Additional styles for the contact information */
