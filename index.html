@@ -89,6 +89,36 @@
             width: 100%;
             position: fixed;
             bottom: 0;
+            left: 0;
+        }
+
+        /* Additional styles for the address and phone number */
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        /* Styles for address and phone number */
+        .location {
+            font-weight: bold;
+        }
+
+        /* Adjust content padding to prevent overlap */
+        body {
+            margin: 0;
+            padding-bottom: 60px; /* Height of the footer */
+        }
+
+        /* Hide footer when content exceeds viewport height */
+        body:after {
+            content: "";
+            display: block;
+            height: 60px; /* Height of the footer */
+        }
+
+        @media (min-height: 100vh) {
+            footer {
+                position: absolute;
+            }
         }
     </style>
 
