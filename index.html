@@ -80,48 +80,18 @@
             }
         }
 
-        /* Footer styles */
-        footer {
+        /* Additional styles for the contact information */
+        .contact-info-container {
             background-color: #18284e;
             color: #ebe7e5;
             text-align: center;
             padding: 20px;
             width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            display: none; /* Initially hide the footer */
-            z-index: 1000; /* Ensure footer is on top of other content */
-        }
-
-        /* Additional styles for the address and phone number */
-        .contact-info {
-            margin-top: 10px;
         }
 
         /* Styles for address and phone number */
         .location {
             font-weight: bold;
-        }
-
-        /* Adjust content padding to prevent overlap */
-        body {
-            margin: 0;
-            padding-bottom: 60px; /* Height of the footer */
-        }
-
-        /* Hide footer when content exceeds viewport height */
-        body:after {
-            content: "";
-            display: block;
-            height: 60px; /* Height of the footer */
-        }
-
-        @media (min-height: 100vh) {
-            footer {
-                position: absolute;
-                display: block; /* Show the footer when scrolled to the bottom */
-            }
         }
     </style>
 
@@ -136,29 +106,6 @@
         <!-- Mobile Image -->
         <img src="landing-page-mobile.png" alt="Mobile Image" class="responsive mobile-image">
     </div>
-
-    <footer>
-        <p>&copy; 2024 Patel Holdings LLC. All rights reserved.</p>
-        <div class="contact-info">
-            <div class="location">New York (Americas):</div>
-            <p>200 Park Ave, New York, NY, USA 10166</p>
-            <p>+1 (212) 682-0309</p>
-
-            <div class="location">Toronto (Americas):</div>
-            <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
-            <p>+1 (416) 203-7575</p>
-
-            <div class="location">London (Europe):</div>
-            <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
-            <p>+44 20 7437 1521</p>
-
-            <div class="location">India (Asia-Pacific):</div>
-            <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
-            <p>+91 97284 84865</p>
-
-            <p>Email: info@patel-holdings.com</p>
-        </div>
-    </footer>
 
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -214,6 +161,26 @@
         </script>
         
         </a>
+    </div>
+
+<div class="contact-info-container">
+        <div class="location">New York (Americas):</div>
+        <p>200 Park Ave, New York, NY, USA 10166</p>
+        <p>+1 (212) 682-0309</p>
+
+        <div class="location">Toronto (Americas):</div>
+        <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
+        <p>+1 (416) 203-7575</p>
+
+        <div class="location">London (Europe):</div>
+        <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
+        <p>+44 20 7437 1521</p>
+
+        <div class="location">India (Asia-Pacific):</div>
+        <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
+        <p>+91 97284 84865</p>
+
+        <p>Email: info@patel-holdings.com</p>
     </div>
     
 <script type="module">
