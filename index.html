@@ -24,12 +24,14 @@
         .image-container {
             background-color: #ebe7e5;
             text-align: center;
-            padding-top: 450px; /* Add padding to the top of the container */
+            padding-top: 425px; /* Add padding to the top of the container */
         }
 
         .responsive {
             width: 100%;
             height: auto;
+            max-height: calc(100vh - 450px);
+            max-width: 100%
         }
 
         .container {
@@ -77,6 +79,10 @@
 
             .mobile-image {
                 display: block;
+            }
+            
+            .image-container {
+        padding-top: 250px; /* Adjust padding for smaller screens */
             }
         }
 
