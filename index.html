@@ -87,11 +87,20 @@
             text-align: center;
             padding: 20px;
             width: 100%;
+            display: flex; /* Use flexbox for horizontal alignment */
+            justify-content: center; /* Center align the items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        }
+
+        .location-container {
+            margin: 10px; /* Add margin between location containers */
+            width: 250px; /* Set a fixed width for each location container */
         }
 
         /* Styles for address and phone number */
         .location {
             font-weight: bold;
+            margin-bottom: 5px; /* Add margin below location name */
         }
     </style>
 
@@ -163,24 +172,31 @@
         </a>
     </div>
 
-<div class="contact-info-container">
-        <div class="location">New York (Americas):</div>
-        <p>200 Park Ave, New York, NY, USA 10166</p>
-        <p>+1 (212) 682-0309</p>
+<!-- Contact information -->
+    <div class="contact-info-container">
+        <div class="location-container">
+            <div class="location">New York (Americas):</div>
+            <p>200 Park Ave, New York, NY, USA 10166</p>
+            <p>+1 (212) 682-0309</p>
+        </div>
 
-        <div class="location">Toronto (Americas):</div>
-        <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
-        <p>+1 (416) 203-7575</p>
+        <div class="location-container">
+            <div class="location">Toronto (Americas):</div>
+            <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
+            <p>+1 (416) 203-7575</p>
+        </div>
 
-        <div class="location">London (Europe):</div>
-        <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
-        <p>+44 20 7437 1521</p>
+        <div class="location-container">
+            <div class="location">London (Europe):</div>
+            <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
+            <p>+44 20 7437 1521</p>
+        </div>
 
-        <div class="location">India (Asia-Pacific):</div>
-        <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
-        <p>+91 97284 84865</p>
-
-        <p>Email: info@patel-holdings.com</p>
+        <div class="location-container">
+            <div class="location">India (Asia-Pacific):</div>
+            <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
+            <p>+91 97284 84865</p>
+        </div>
     </div>
     
 <script type="module">
