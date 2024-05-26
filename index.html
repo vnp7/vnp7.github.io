@@ -1,85 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <title>Patel Holdings LLC</title>
-    <meta name="description" content="A private, multigenerational investment firm diversifying wealth across family funds, businesses, and global ventures.">
-    <link rel="icon" type="image/x-icon" href="favicon.JPG">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patel Holdings LLC | Home</title>
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3KFG5C1ZL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-N3KFG5C1ZL');
-    </script>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Patel Holdings LLC is focused on wealth generation and philanthropic initiatives. Our team is dedicated to investment and charitable endeavors." />
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="canonical" href="https://patelholdings.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Patel Holdings LLC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Patel Holdings LLC | Home" />
+    <meta property="og:description" content="Patel Holdings LLC is focused on wealth generation and philanthropic initiatives. Our team is dedicated to investment and charitable endeavors." />
+    <meta property="og:url" content="https://patelholdings.com/" />
+    <meta property="og:image" content="https://patelholdings.com/logo.png"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="https://patelholdings.com/">
+                    <img src="https://patelholdings.com/logo.png" alt="Patel Holdings LLC Logo" />
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="image-container">
-        <!-- Desktop Image -->
-        <img src="landing-page.png" alt="Landing Page Desktop" class="responsive desktop-image">
+        <main>
+            <section id="home" class="hero" style="background-image: url('https://patelholdings.com/hero.jpg');">
+                <div class="hero-content">
+                    <h1>Welcome to Patel Holdings LLC</h1>
+                    <p>Focused on Wealth Generation and Philanthropic Initiatives</p>
+                    <a href="#about" class="button">Learn More</a>
+                </div>
+            </section>
 
-        <!-- Mobile Image -->
-        <img src="landing-page-mobile.png" alt="Landing Page Mobile" class="responsive mobile-image">
+            <section id="about" class="content-section">
+                <h2>About Us</h2>
+                <p>Patel Holdings LLC is committed to both wealth generation and philanthropic endeavors. Our team, led by Vasu Patel, ensures that our investment strategies align with our values of integrity and community support.</p>
+            </section>
+
+            <section id="services" class="content-section">
+                <h2>Our Services</h2>
+                <p>We offer a range of investment and financial advisory services tailored to meet the unique needs of our clients. From portfolio management to strategic planning, Patel Holdings LLC is your trusted partner.</p>
+            </section>
+
+            <section id="team" class="content-section">
+                <h2>Our Team</h2>
+                <p>Meet the dedicated professionals behind Patel Holdings LLC. Our team combines expertise and passion to deliver exceptional service to our clients.</p>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to learn more about our services, please get in touch with us. We are here to help you achieve your financial goals.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Patel Holdings LLC. All rights reserved.</p>
+        </footer>
     </div>
 
-    <div class="container">
-        <h2>Member Authentication</h2>
-
-        <form id="auth-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Sign In</button>
-        </form>
-
-        <!-- Sign Up button -->
-        <a href="mailto:IT@patel-holdings.com?subject=Request%20-%20User%20Sign%20Up&body=%5BFirst%20Name%5D%5BLast%20Name%5D%20requesting%20login%20information%20for%20Patel-Holdings.com%20%26%20BBA.%20ID%20number%3A%20%5BEmployee%20ID%5D%2C%20Phone%20number%20%28for%2FA%29%20%5B%2Bx-xxx-xxx-xxxx%5D.%20RefID%3Ab00e44b3-6ea2-444f-a2c3-c084ea4c96cc" onclick="redirectIfGmail()">Request Login Information</a>
-    </div>
-
-    <!-- Contact information -->
-    <div class="contact-info-container">
-        <div class="location-container">
-            <div class="location">New York (Americas):</div>
-            <p>200 Park Ave, New York, NY, USA 10166</p>
-            <p>+1 (212) 682-0309</p>
-        </div>
-
-        <div class="location-container">
-            <div class="location">Toronto (Americas):</div>
-            <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
-            <p>+1 (416) 203-7575</p>
-        </div>
-
-        <div class="location-container">
-            <div class="location">London (Europe):</div>
-            <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
-            <p>+44 20 7437 1521</p>
-        </div>
-
-        <div class="location-container">
-            <div class="location">India (Asia-Pacific):</div>
-            <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
-            <p>+91 97284 84865</p>
-        </div>
-    </div>
-
-    <!-- Email -->
-    <div class="email">
-        <p>Email: info@patel-holdings.com</p>
-    </div>
-
-    <script src="script.js" type="module"></script>
+    <script>
+        // Your custom JavaScript here
+    </script>
 </body>
-
 </html>
