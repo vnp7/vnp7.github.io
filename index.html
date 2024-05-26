@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Patel Holdings LLC</title>
@@ -14,72 +13,206 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+    
       gtag('config', 'G-N3KFG5C1ZL');
     </script>
-
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ebe7e5;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh;
+            flex-direction: column;
+        }
+        .image-container {
+            background-color: #ebe7e5;
+            text-align: center;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+            max-width: 100%
+        }
+        .container {
+            background-color: #ebe7e5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #18284e;
+            color: #ebe7e5;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px; /* Add margin-top for spacing between buttons */
+        }
+        /* Styles for desktop */
+        @media only screen and (min-width: 768px) {
+            .image-container {
+        padding-top: 450px; /* Adjust padding for desktop */
+            }
+            .mobile-image {
+                display: none;
+            }
+            .desktop-image {
+                display: block;
+            }
+        }
+        /* Styles for mobile */
+        @media only screen and (max-width: 767px) {
+            .image-container {
+        padding-top: 1070px; /* Adjust padding for mobile */
+            }
+            .desktop-image {
+                display: none;
+            }
+            .mobile-image {
+                display: block;
+            }
+        }
+        /* Additional styles for the contact information */
+        .contact-info-container {
+            background-color: #18284e;
+            color: #ebe7e5;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            display: flex; /* Use flexbox for horizontal alignment */
+            justify-content: center; /* Center align the items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        }
+        .location-container {
+            margin: 10px; /* Add margin between location containers */
+            width: 250px; /* Set a fixed width for each location container */
+        }
+        /* Styles for address and phone number */
+        .location {
+            font-weight: bold;
+            margin-bottom: 5px; /* Add margin below location name */
+        }
+        .email {
+            margin-top: 20px; /* Add margin on top of email */
+        }
+    </style>
 </head>
-
 <body>
-
     <div class="image-container">
         <!-- Desktop Image -->
-        <img src="landing-page.png" alt="Landing Page Desktop" class="responsive desktop-image">
-
+        <img src="landing-page.png" alt="Desktop Image" class="responsive desktop-image">
         <!-- Mobile Image -->
-        <img src="landing-page-mobile.png" alt="Landing Page Mobile" class="responsive mobile-image">
+        <img src="landing-page-mobile.png" alt="Mobile Image" class="responsive mobile-image">
     </div>
-
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getAuth } from "firebase/auth";
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyBKk0b2-Dr2IkiiSObJdxdKiNaHRCQMmzo",
+        authDomain: "patel-holdings.firebaseapp.com",
+        projectId: "patel-holdings",
+        storageBucket: "patel-holdings.appspot.com",
+        messagingSenderId: "703106012824",
+        appId: "1:703106012824:web:9a51ca849e006fa41fa2ed",
+        measurementId: "G-N3KFG5C1ZL"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        
+        const auth = getAuth(app);
+    </script>
     <div class="container">
         <h2>Member Authentication</h2>
-
-        <form id="auth-form">
+        <form action="https://bba.bloomberg.net/" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
             <button type="submit">Sign In</button>
         </form>
-
         <!-- Sign Up button -->
         <a href="mailto:IT@patel-holdings.com?subject=Request%20-%20User%20Sign%20Up&body=%5BFirst%20Name%5D%5BLast%20Name%5D%20requesting%20login%20information%20for%20Patel-Holdings.com%20%26%20BBA.%20ID%20number%3A%20%5BEmployee%20ID%5D%2C%20Phone%20number%20%28for%2FA%29%20%5B%2Bx-xxx-xxx-xxxx%5D.%20RefID%3Ab00e44b3-6ea2-444f-a2c3-c084ea4c96cc" onclick="redirectIfGmail()">Request Login Information</a>
+        <script>
+        function redirectIfGmail() {
+          if (window.location.href.indexOf("gmail.com") !== -1) {
+            window.location.href = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=IT@patel-holdings.com&su=Request%20-%20User%20Sign%20Up&body=%5BFirst%20Name%5D%5BLast%20Name%5D%20requesting%20login%20information%20for%20Patel-Holdings.com%20%26%20BBA.%20ID%20number%3A%20%5BEmployee%20ID%5D%20C%2C%20Phone%20number%20%28for%2FA%29%20%5B%2Bx-xxx-xxx-xxxx%5D.%20RefID%3Ab00e44b3-6ea2-444f-a2c3-c084ea4c96cc";
+          }
+        }
+        </script>
+        
+        </a>
     </div>
-
-    <!-- Contact information -->
+<!-- Contact information -->
     <div class="contact-info-container">
         <div class="location-container">
             <div class="location">New York (Americas):</div>
             <p>200 Park Ave, New York, NY, USA 10166</p>
             <p>+1 (212) 682-0309</p>
         </div>
-
         <div class="location-container">
             <div class="location">Toronto (Americas):</div>
             <p>119 Spadina Ave., Toronto, ON M5V 2L1, Canada</p>
             <p>+1 (416) 203-7575</p>
         </div>
-
         <div class="location-container">
             <div class="location">London (Europe):</div>
             <p>50 Jermyn St, St. James's, London SW1Y 6LX, UK</p>
             <p>+44 20 7437 1521</p>
         </div>
-
         <div class="location-container">
             <div class="location">India (Asia-Pacific):</div>
             <p>Anand - Maghrol Rd, Vithal Udyognagar, GIDC, Anand, Gujarat, India 388001</p>
             <p>+91 97284 84865</p>
         </div>
     </div>
-
     <!-- Email -->
     <div class="email">
         <p>Email: info@patel-holdings.com</p>
     </div>
-
-    <script src="script.js" type="module"></script>
+    
+<script type="module">
+    import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+    function signIn(event) {
+        event.preventDefault(); // Prevent the default form submission
+        var email = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                console.log('User signed in:', user);
+                // Redirect to another page or perform other actions
+                window.location.href = 'https://bba.bloomberg.net/';
+            })
+            .catch((error) => {
+                // Handle errors
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error('Sign-in error:', errorCode, errorMessage);
+            });
+    }
+</script>
 </body>
-
 </html>
