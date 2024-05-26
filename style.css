@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebe7e5;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    flex-direction: column;
+}
+
+.image-container {
+    background-color: #ebe7e5;
+    text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    background-color: #ebe7e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #18284e;
+    color: #ebe7e5;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin-top for spacing between buttons */
+}
+
+/* Styles for desktop */
+@media only screen and (min-width: 768px) {
+    .image-container {
+        padding-top: 450px; /* Adjust padding for desktop */
+    }
+    .mobile-image {
+        display: none;
+    }
+
+    .desktop-image {
+        display: block;
+    }
+}
+
+/* Styles for mobile */
+@media only screen and (max-width: 767px) {
+    .image-container {
+        padding-top: 1000px; /* Adjust padding for mobile */
+    }
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+}
+
+/* Additional styles for the contact information */
+.contact-info-container {
+    background-color: #18284e;
+    color: #ebe7e5;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center align the items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.location-container {
+    margin: 10px; /* Add margin between location containers */
+    width: 250px; /* Set a fixed width for each location container */
+}
+
+/* Styles for address and phone number */
+.location {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add margin below location name */
+}
+
+.email {
+    margin-top: 20px; /* Add margin on top of email */
+}
